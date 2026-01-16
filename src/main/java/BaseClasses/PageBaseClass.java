@@ -36,15 +36,7 @@ public class PageBaseClass {
                 System.setProperty("webdriver.chrome.driver",
                         System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 
-                ChromeOptions options = new ChromeOptions();
-
-                options.addArguments("--headless=new");     // Jenkins-safe
-                options.addArguments("--disable-gpu");
-                options.addArguments("--window-size=1920,1080");
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
-
-                driver = new ChromeDriver(options);
+                driver = new ChromeDriver();
             }
 
             else if (browserName.equalsIgnoreCase("edge")) {
