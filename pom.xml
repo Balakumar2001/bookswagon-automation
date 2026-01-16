@@ -18,7 +18,7 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <!-- ✅ ACTUAL DEPENDENCIES -->
+    <!-- ================= DEPENDENCIES ================= -->
     <dependencies>
 
         <!-- Selenium -->
@@ -35,8 +35,6 @@
             <version>7.11.0</version>
             <scope>test</scope>
         </dependency>
-
-        
 
         <!-- Extent Reports -->
         <dependency>
@@ -61,11 +59,11 @@
 
     </dependencies>
 
-    <!-- ✅ BUILD CONFIG -->
+    <!-- ================= BUILD CONFIG ================= -->
     <build>
         <plugins>
 
-            <!-- Compiler -->
+            <!-- Java Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -76,15 +74,23 @@
                 </configuration>
             </plugin>
 
-            <!-- TestNG Runner -->
+            <!-- Maven Surefire (TestNG + JUnit XML for Jenkins) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+
+                    <!-- Run TestNG -->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+
+                    <!-- IMPORTANT: Generate JUnit-style XML -->
+                    <reportsDirectory>
+                        ${project.build.directory}/surefire-reports
+                    </reportsDirectory>
+
                 </configuration>
             </plugin>
 
