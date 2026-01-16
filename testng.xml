@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bookswagon Automation Suite">
+
+    <listeners>
+        <listener class-name="Utils.TestListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+        <classes>
+            <class name="TestClasses.AddBestBookToCartTest"/>
+            <class name="TestClasses.verifyCartPersistenceAfterNavigation"/>
+            <class name="TestClasses.verifyCartIsEmptyInNewSession"/>
+            <!-- Other flows -->
+            <class name="TestClasses.NewArrivalsTest"/>
+            <class name="TestClasses.SearchBookTest"/>
+        </classes>
+    </test>
+
+</suite>

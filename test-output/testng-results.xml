@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-16T11:52:35 IST" name="Bookswagon Automation Suite" finished-at="2026-01-16T11:53:55 IST" duration-ms="80029">
+    <groups>
+    </groups>
+    <test started-at="2026-01-16T11:52:35 IST" name="Regression Tests" finished-at="2026-01-16T11:53:55 IST" duration-ms="80029">
+      <class name="TestClasses.NewArrivalsTest">
+        <test-method signature="verifyNewArrivalsFilterFlow()[pri:0, instance:TestClasses.NewArrivalsTest@6b2ea799]" started-at="2026-01-16T11:53:34 IST" name="verifyNewArrivalsFilterFlow" finished-at="2026-01-16T11:53:47 IST" duration-ms="12245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewArrivalsFilterFlow -->
+      </class> <!-- TestClasses.NewArrivalsTest -->
+      <class name="TestClasses.AddBestBookToCartTest">
+        <test-method signature="addMultipleBooksAndVerifyCart()[pri:0, instance:TestClasses.AddBestBookToCartTest@5fe94a96]" started-at="2026-01-16T11:52:35 IST" name="addMultipleBooksAndVerifyCart" finished-at="2026-01-16T11:52:50 IST" duration-ms="14890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleBooksAndVerifyCart -->
+      </class> <!-- TestClasses.AddBestBookToCartTest -->
+      <class name="TestClasses.verifyCartPersistenceAfterNavigation">
+        <test-method signature="verifyCartPersistenceAfterNavigation()[pri:0, instance:TestClasses.verifyCartPersistenceAfterNavigation@6771beb3]" started-at="2026-01-16T11:52:50 IST" name="verifyCartPersistenceAfterNavigation" finished-at="2026-01-16T11:53:05 IST" duration-ms="15043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartPersistenceAfterNavigation -->
+      </class> <!-- TestClasses.verifyCartPersistenceAfterNavigation -->
+      <class name="TestClasses.SearchBookTest">
+        <test-method signature="verifyBookSearch()[pri:0, instance:TestClasses.SearchBookTest@411f53a0]" started-at="2026-01-16T11:53:47 IST" name="verifyBookSearch" finished-at="2026-01-16T11:53:55 IST" duration-ms="8010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookSearch -->
+      </class> <!-- TestClasses.SearchBookTest -->
+      <class name="TestClasses.verifyCartIsEmptyInNewSession">
+        <test-method signature="verifyCartIsEmptyInNewSession()[pri:0, instance:TestClasses.verifyCartIsEmptyInNewSession@51399530]" started-at="2026-01-16T11:53:05 IST" name="verifyCartIsEmptyInNewSession" finished-at="2026-01-16T11:53:34 IST" duration-ms="29582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartIsEmptyInNewSession -->
+      </class> <!-- TestClasses.verifyCartIsEmptyInNewSession -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Bookswagon Automation Suite -->
+</testng-results>
